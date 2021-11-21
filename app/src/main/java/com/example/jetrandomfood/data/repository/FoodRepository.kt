@@ -22,10 +22,6 @@ class FoodRepository(private val foodDao: FoodDao) : Repository{
         TODO("Not yet implemented")
     }
 
-    override fun insertFood(food: List<FoodDbModel>) {
-        TODO("Not yet implemented")
-    }
-
 
     private val foodDataLiveData: MutableLiveData<List<FoodDbModel>> by lazy {
         MutableLiveData<List<FoodDbModel>>()

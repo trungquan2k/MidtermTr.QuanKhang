@@ -157,7 +157,7 @@ fun TopAppBar(scaffoldState: ScaffoldState, scope: CoroutineScope) {
                     Icon(
                         Icons.Default.AccountCircle,
                         tint = Color.Black,
-                        contentDescription = stringResource(R.string.app_name),
+                        contentDescription = stringResource(id=R.string.app_name),
                     )
                 },
                 onClick = {
@@ -168,7 +168,7 @@ fun TopAppBar(scaffoldState: ScaffoldState, scope: CoroutineScope) {
                 }
             )
         },
-        title = { Text(text = stringResource(R.string.app_name), color = Color.Black) },
+        title = { Text(text = stringResource(id=R.string.app_name), color = Color.Black) },
         actions = {
             Image(
                 painter = painterResource(R.drawable.fan),
@@ -186,7 +186,7 @@ fun TopAppBar(scaffoldState: ScaffoldState, scope: CoroutineScope) {
                 }) {
                     Icon(
                         Icons.Filled.MoreVert,
-                        contentDescription = "Localized description"
+                        contentDescription = "More Vert"
                     )
                 }
                 DropdownMenu(

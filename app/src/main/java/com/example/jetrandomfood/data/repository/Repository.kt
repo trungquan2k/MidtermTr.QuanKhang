@@ -8,9 +8,6 @@ interface Repository {
 
     fun getAllFood(): LiveData<List<FoodDbModel>>
 
-    fun insertFood(food: List<FoodDbModel>)
-
-
     fun getRanDomFood(): LiveData<List<FoodDbModel>>
 
 }

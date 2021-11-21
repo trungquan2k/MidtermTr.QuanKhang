@@ -31,7 +31,6 @@ import com.example.jetrandomfood.viewmodel.MainViewModelFactory
 
 
 
-
 @Composable
 fun ListDataRoom(food: FoodDbModel) {
     val backgroundShape: androidx.compose.ui.graphics.Shape = RoundedCornerShape(4.dp)
@@ -67,16 +66,6 @@ fun ListDataRoom(food: FoodDbModel) {
                     fontWeight = FontWeight.Normal,
                     fontSize = 16.sp,
                     letterSpacing = 0.15.sp
-                )
-            )
-            Text(
-                food.price,
-                maxLines = 1,
-                color = Color.Black.copy(alpha = 0.75f),
-                style = TextStyle(
-                    fontWeight = FontWeight.Normal,
-                    fontSize = 14.sp,
-                    letterSpacing = 0.25.sp
                 )
             )
         }
